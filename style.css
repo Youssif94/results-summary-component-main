@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  font-size: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(hsl(252, 100%, 67%, 1), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  color: white;
+  width: 300px;
+}
+.card-1 * {
+  margin: 20px 0px;
+}
+.desc {
+  text-align: center;
+  width: 85%;
+}
+.score {
+  color: white;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  padding: 45px;
+}
+.score * {
+  margin: 0 !important;
+}
+.score > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score > p > span {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 50px;
+}
+
+span {
+  font-weight: bold;
+}
+.score-groups {
+  height: 260px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.score-groups * {
+  display: flex;
+}
+.score-groups > div {
+  border-radius: 10px;
+}
+.score-reaction {
+  width: 250px;
+  justify-content: space-between;
+  padding: 15px;
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+.score-memory {
+  width: 250px;
+  justify-content: space-between;
+  padding: 15px;
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.05);
+}
+.score-verbal {
+  width: 250px;
+  justify-content: space-between;
+  padding: 15px;
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.05);
+}
+.score-visual {
+  width: 250px;
+  justify-content: space-between;
+  padding: 15px;
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.05);
+}
+
+button {
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  background-image: linear-gradient(
+    hsl(252, 100%, 67%, 0.5),
+    hsl(241, 81%, 54%)
+  );
+  padding: 15px 30px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: auto;
+    width: fit-content;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-1 {
+    border-radius: 0px 0px 30px 30px;
+    width: 100vw;
+  }
+  .card-2 {
+    margin: 15px 0px;
+    width: 100vw;
+  }
+  .score-groups {
+    display: flex;
+    margin: 0 auto;
+  }
+  .score-groups > div {
+    width: 90vw;
+  }
+  .card-2 > h4 {
+    margin: 30px 30px;
+    text-align: start;
+  }
+  button {
+    background-color: hsl(241, 100%, 89%);
+    width: 90vw;
+    margin: 30px auto;
+  }
+}
